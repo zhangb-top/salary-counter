@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  border: 0;
+  border-bottom: .125rem solid #000;
+  font-size: 1rem;
+}
+
+/* 工资 */
+#salary {
+  width: 3.125rem;
+  font-size: 1.25rem;
+  color: red;
+  font-style: italic;
+  text-align: center;
+}
+
+/* 整体布局 */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* h1样式 */
+.title {
+  margin-top: .625rem;
+  text-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, .5);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* 顶部样式 */
+.top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.num {
+  color: red;
+  font-size: 1.25rem;
+}
+
+/* 添加的按钮样式 */
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 16px 0px rgba(0, 0, 0, .5);
+}
+
+.add-btn {
+  background-color: #0984e3;
+  color: #fff;
+  padding: .625rem;
+  border-radius: .3125rem;
+  font-size: 1.125rem;
+  margin: 1.25rem 0;
+}
+
+/* 数据盒子样式s */
+.data-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  font-size: 1rem;
+}
+
+.data-month .date {
+  text-align: center;
+}
+
+/* 每个月数据样式 */
+.data-box .data-month {
+  width: 100%;
+  border: 2px dotted #6c5ce7;
+  padding: .625rem;
+  margin: .625rem;
+}
+
+.data-box .data-month .data-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .625rem;
+  font-size: 1.125rem;
+}
+
+.edit-btn {
+  background-color: #0984e3;
+  color: #fff;
+  padding: .3125rem .625rem;
+  border-radius: .3125rem;
+  font-size: 1rem;
+}
+
+/* 底部样式 */
+.footer {
+  margin-top: .625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 时间选择器样式 */
+.form-container {
+  display: none;
+}
+
+.form-container.show {
+  display: block;
+}
+
+.form {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 12.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 1.25rem #000;
+  border-radius: .3125rem;
+}
+
+.form .form-item {
+  margin: .625rem 0;
+}
+
+input[type=time] {
+  width: 6.25rem;
+  height: 1.875rem;
+  border: none;
+  border-radius: .3125rem;
+  padding: .3125rem;
+  background-color: #81ecec;
+  color: #000;
+  font-size: 1.125rem;
+}
+
+.cofirm-btn {
+  width: 4.375rem;
+  background-color: #0984e3;
+  padding: .625rem;
+  border-radius: .3125rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  top: .3125rem;
+  right: .625rem;
+  font-size: 20px;
+}
+
+/* 提示词 */
+.tip {
+  position: fixed;
+  top: 3.125rem;
+  right: -12.5rem;
+  width: 12.5rem;
+  min-height: 3.125rem;
+  background-color: #ff7675;
+  border-radius: .3125rem;
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 3.125rem;
+  transition: .6s;
+}
+
+.tip.show {
+  right: .625rem;
+}

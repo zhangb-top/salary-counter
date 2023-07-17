@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工资计数器</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">工资计数器</h1>
+    <div class="top">
+      <button class="add-btn">+ 添加今日记录</button>
+      <div class="salary-one-hour">工资：<input type="number" value="22.5" id="salary"> 元 / 小时</div>
+    </div>
+    <div class="data-box"></div>
+  </div>
+  <!-- 时间选择器 -->
+  <div class="form-container">
+    <div class="form">
+      <div class="close">×</div>
+      <div class="form-item">
+        <label for="start-time">开始时间：</label>
+        <input type="time" id="start-time">
+      </div>
+      <div class="form-item">
+        <label for="end-time">结束时间：</label>
+        <input type="time" id="end-time">
+      </div>
+      <button class="cofirm-btn">确定</button>
+    </div>
+  </div>
+  <!-- 提示词 -->
+  <div class="tip"></div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
